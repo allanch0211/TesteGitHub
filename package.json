@@ -1,0 +1,23 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Teste Inicial Local cypress",
+  "keywords": [
+    "cypress"
+  ],
+  "license": "MIT",
+  "author": "Allan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx cypress open",
+    "allure-chro": "cypress run --browser chrome --env allure=true",
+    "allure-fire": "npx cypress run --browser firefox --env allure=true",
+    "allure:repo": "allure generate allure-results --clean -o allure-report",
+    "allure:clea": "rm -r allure-results/ allure-report cypress/screenshots || true"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "cypress": "^15.6.0"
+  }
+}
