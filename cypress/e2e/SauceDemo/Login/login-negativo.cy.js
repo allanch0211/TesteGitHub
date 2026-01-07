@@ -4,10 +4,8 @@ describe('Login-negativo SauceDemo', () => {
 
         cy.visit('https://www.saucedemo.com/')
 
-        cy.get('[data-test="username"]').type('Allan')
-        cy.get('[data-test="password"').type('Christian')
+        cy.Login('Allan', 'Christian')
 
-        cy.get('[data-test="login-button"]').click() 
 
         //Validação do erro
 

@@ -6,10 +6,8 @@ describe('Login SauceDemo', () => {
         //Login
         cy.visit('https://www.saucedemo.com/')
 
-        cy.get('[data-test="username"]').type('locked_out_user')
-        cy.get('[data-test="password"]').type('secret_sauce')
+        cy.Login('locked_out_user', 'secret_sauce')
 
-        cy.get('[data-test="login-button"]').click()
 
 //Validação de continuidade na página 
 

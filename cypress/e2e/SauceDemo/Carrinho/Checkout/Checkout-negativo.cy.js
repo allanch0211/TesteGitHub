@@ -6,15 +6,15 @@ beforeEach(() => {
 
     //Login
 cy.visit('https://www.saucedemo.com/')
-cy.get('[data-test="username"]').type('standard_user')
-cy.get('[data-test="password"]').type('secret_sauce')
-cy.get('[data-test="login-button"]').click()
+cy.Login('standard_user', 'secret_sauce')
 
 //Adiconar produto 
 
-cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
-cy.get('[data-test="shopping-cart-link"]').click()
-cy.get('[data-test="checkout"]').click()
+cy.addBackpackToCart()
+
+cy.goToCart()
+
+cy.goToCheckout()
 
 //Validação da página de checkout 
 
@@ -24,7 +24,7 @@ cy.url().should('include', 'checkout-step-one')
 
     it('Realizando checkout sem digitar nada', () => {
 
-        cy.get('[data-test="continue"]').click()
+        cy.goToContinue()
 
 
         //Validação do erro

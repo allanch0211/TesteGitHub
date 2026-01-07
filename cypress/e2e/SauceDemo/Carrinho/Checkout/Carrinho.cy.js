@@ -2,19 +2,23 @@ describe('Carrinho SauceDemo', () => {
 
 beforeEach(() => {
     cy.visit('https://www.saucedemo.com/')
-    cy.get('[data-test="username"]').type('standard_user')
-    cy.get('[data-test="password"]').type('secret_sauce')
-    cy.get('[data-test="login-button"]').click()
+    cy.Login('standard_user', 'secret_sauce')
+
+    
 
     cy.url().should('include', 'inventory')
 })
 
 it('Adicionar produto ao carrinho', () => {
     
-    cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
+    cy.addBackpackToCart()
 
-    cy.get('[data-test="shopping-cart-link"]').click()
+    cy.goToCart()
     cy.get('.title').should('contain', 'Your Cart')
+
+
+
+    
 })
 
 })

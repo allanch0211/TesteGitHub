@@ -23,7 +23,7 @@ cy.get('[data-test="continue"]').click()
 
 
 
-cypress.Commands.add('goToFinishCheckout', () => {
+Cypress.Commands.add('goToFinishCheckout', () => {
 
 cy.get('[data-test="finish"]').click() 
 
