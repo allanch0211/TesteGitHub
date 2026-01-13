@@ -1,9 +1,14 @@
 
 
 Cypress.Commands.add('addBackpackToCart', () => {
-
+    
 cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
 
+})
+
+Cypress.Commands.add('removeBackPack', () => {
+    
+cy.get('[data-test="remove-sauce-labs-backpack"]').click()
 
 })
 
