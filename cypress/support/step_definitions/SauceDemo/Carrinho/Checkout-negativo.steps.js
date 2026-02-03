@@ -1,8 +1,6 @@
-describe('Checkout Campos Obrigatorios Negativo', () => {
+const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
-
-
-beforeEach(() => {
+Given("que o usuário está autenticado", () => {
 
     //Login
 cy.visit('https://www.saucedemo.com/')
@@ -11,6 +9,9 @@ cy.Login('standard_user', 'secret_sauce')
 
 cy.get('.title')
 .should('contain', 'Products')
+});
+
+When("possui um produto no carrinho", () => {
 
 //Adiconar produto 
 
@@ -23,15 +24,17 @@ cy.goToCheckout()
 //Validação da página de checkout 
 
 cy.url().should('include', 'checkout-step-one')
-    
 });
 
-    it('Realizando checkout sem digitar nada', () => {
+When("não informa os dados pessoais obrigatórios e tenta finalziar o pedido", () => {
 
-        cy.goToContinue()
+cy.goToContinue()
+});
 
 
-        //Validação do erro
+Then("o sistema deve exibir uma mensagem de erro e impedir a finalização do pedido", () => {
+
+ //Validação do erro
 
         cy.get('[data-test="error"]')
         .should('be.visible')
@@ -40,9 +43,4 @@ cy.url().should('include', 'checkout-step-one')
         //Validação da continuidade na página
 
         cy.url().should('include', 'checkout-step-one')
-
-
-
-        
-    });
 });

@@ -1,12 +1,13 @@
 describe('Carrinho SauceDemo', () => {
 
 beforeEach(() => {
-    cy.visit('https://www.saucedemo.com/')
-    cy.Login('standard_user', 'secret_sauce')
+      //Login
+cy.visit('https://www.saucedemo.com/')
 
-    
+cy.Login('standard_user', 'secret_sauce')
 
-    cy.url().should('include', 'inventory')
+cy.get('.title')
+.should('contain', 'Products')
 })
 
 it('Adicionar produto ao carrinho', () => {

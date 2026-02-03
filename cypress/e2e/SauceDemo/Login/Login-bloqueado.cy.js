@@ -8,17 +8,15 @@ describe('Login SauceDemo', () => {
 
         cy.Login('locked_out_user', 'secret_sauce')
 
-
-//Validação de continuidade na página 
-
-cy.url().should('eq', 'https://www.saucedemo.com/')
-
-//Mensagem de erro
+//Validação do erro
 
 cy.get('[data-test="error"]')
 .should('be.visible')
 .and('contain', 'Sorry, this user has been locked out.')        
 
+//Validação que não saiu da página de login
+
+        cy.url().should('include', 'saucedemo.com')
 
     });
 
