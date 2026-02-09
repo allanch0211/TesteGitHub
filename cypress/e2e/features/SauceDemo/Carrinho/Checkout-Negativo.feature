@@ -5,7 +5,6 @@ Scenario: Checkout inválido do usuário
 
 Given que o usuário está autenticado
 And possui um produto no carrinho
-When não informa os dados pessoais obrigatórios
-And tenta finalizar o pedido
+When tenta finalizar a compra sem informar os dados pessoais obrigatórios
 Then o sistema deve exibir uma mensagem de erro e impedir a finalização do pedido
 

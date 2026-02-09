@@ -5,6 +5,6 @@ Scenario: Checkout válido do usuário
 
 Given que o usuário está autenticado
 And possui um produto no carrinho
-When informa seus dados pessoais obrigatórios
+When informa dados pessoais obrigatórios válidos
 And confirma a finalização da compra
 Then o pedido deve ser concluído com sucesso

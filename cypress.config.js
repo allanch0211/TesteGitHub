@@ -11,7 +11,8 @@ const {
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://www.amazon.com.br",
+    baseUrl: "https://www.amazon.com.br", baseUrl: "https://www.saucedemo.com",
+
     testIsolation: false,
     viewportWidth: 1440,
     viewportHeight: 900,

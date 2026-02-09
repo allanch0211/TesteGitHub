@@ -1,44 +1,38 @@
-const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
+const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
-Given("que o usuário está autenticado", () => {
-
-    //Login
-cy.visit('https://www.saucedemo.com/')
-
-cy.Login('standard_user', 'secret_sauce')
-
-cy.get('.title')
-.should('contain', 'Products')
-});
-
+// Carrinho
 When("possui um produto no carrinho", () => {
-
-cy.addBackpackToCart()
-cy.goToCart()
-
-cy.get('.title')
-.should('contain', 'Your Cart')
-
-cy.goToCheckout() 
+  cy.addBackpackToCart();
+  cy.goToCart();
+  cy.goToCheckout();
 });
 
-When("informa seus dados pessoais obrigatórios", () => {
-
-cy.fillCheckoutForm('Allan', 'Christian', '21865410')
+// Dados válidos
+When("informa dados pessoais obrigatórios válidos", () => {
+  cy.fillCheckoutForm("Allan", "Christian", "21865410");
+  cy.goToContinue();
 });
 
+// Dados inválidos
+When("tenta finalizar a compra sem informar os dados pessoais obrigatórios", () => {
+  cy.goToContinue();
+});
+
+// Finalizar
 When("confirma a finalização da compra", () => {
-
-cy.get('.title')
-.should('contain', 'Your Information')
-
-cy.goToContinue()
-
-cy.get('.title')
-.should('contain', 'Overview')
+  cy.goToFinishCheckout();
 });
 
+// Sucesso
 Then("o pedido deve ser concluído com sucesso", () => {
+  cy.contains("Thank you for your order").should("be.visible");
+});
 
-cy.goToFinishCheckout()
+// Erro
+Then("o sistema deve exibir uma mensagem de erro e impedir a finalização do pedido", () => {
+  cy.get('[data-test="error"]')
+    .should("be.visible")
+    .and("contain", "Error: First Name is required");
+
+  cy.url().should("include", "checkout-step-one");
 });

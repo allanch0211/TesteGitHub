@@ -26,3 +26,4 @@
 import './commands/login.commands'
 import './commands/carrinho.commands'
 import './commands/checkout.commands'
+import './commands/login-step.commands'
