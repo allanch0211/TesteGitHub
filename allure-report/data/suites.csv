@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1026","Login com credenciais validas","","2026-02-11","passed","2026-02-11","","Login no SauceDemo","",""
+"","1902","Checkout inválido do usuário","","2026-02-11","passed","2026-02-11","","Checkout inválido do usuário no SauceDemo","",""
+"","2708","Checkout válido do usuário","","2026-02-11","passed","2026-02-11","","Checkout válido do usuário no SauceDemo","",""
+"","866","Login com credenciais invalidas","","2026-02-11","passed","2026-02-11","","Login inválido SauceDemo","",""
+"","1679","Exibir produto no carrinho","","2026-02-11","passed","2026-02-11","","Exibir produto do carrinho no SauceDemo","",""
+"","2080","Login com usuario bloqueado","","2026-02-11","passed","2026-02-11","","Login bloqueado SauceDemo","",""
