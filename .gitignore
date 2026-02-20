@@ -24,8 +24,8 @@ cypress.env.json
 #  Allure
 # ============================
 allure-results/
-# allure-report/
-# allure-history/
+allure-report/
+allure-history/
 
 # ============================
 #  Coverage (caso use)
