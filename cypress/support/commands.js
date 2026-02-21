@@ -23,7 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-import './commands/login.commands'
-import './commands/carrinho.commands'
-import './commands/checkout.commands'
-import './commands/login-step.commands'
+import './commands/SauceDemo/auth.commands'
+import './commands/SauceDemo/cart.commands'
+import './commands/SauceDemo/checkout.commands'
+import './commands/SauceDemo/inventory.commands'
