@@ -20,15 +20,7 @@ PesquisaDoProduto(prod) {
         .contains('Carrinho')
 }
 
-VerificacaoDoProduto(conf) {
-     cy.get('h2[class="a-size-base-plus a-spacing-none a-color-base a-text-normal"]')
-        .contains(conf)
-        .click()
 
-            cy.get('input[id="add-to-cart-button"]')
-        .should('be.visible')
-        
-}
 
    
 

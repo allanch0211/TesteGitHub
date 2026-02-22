@@ -15,7 +15,7 @@ class elementoPagina {
 
 SiteTelaInicial() {
 
-cy.visit('/')
+cy.visit('https://www.amazon.com.br')
 
 
 }
