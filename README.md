@@ -36,6 +36,7 @@ Git & GitHub
 
 
 📂 Estrutura do Projeto
+
 cypress/
  ┣ e2e/
  ┃ ┗ features/
