@@ -15,6 +15,8 @@ Cucumber (BDD) - @badeball/cypress-cucumber-preprocessor
 
 Page Object Model (POM)
 
+Commands
+
 Allure Reports
 
 JavaScript
@@ -36,6 +38,7 @@ Git & GitHub
 
 
 📂 Estrutura do Projeto
+
 cypress/
  ┣ e2e/
  ┃ ┗ features/
