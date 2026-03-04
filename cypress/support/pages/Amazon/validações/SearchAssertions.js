@@ -2,8 +2,7 @@ class AssertInformation {
 
     VerificacaoDaTelaInicial() {
 
-    cy.get('a[id="nav-global-location-popover-link"]')
-        .should('be.visible')
+    cy.get('#twotabsearchtextbox').should('be.visible')
 
     cy.get('span[class="nav-line-2 nav-progressive-content"]')
         .should('be.visible')
