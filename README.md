@@ -78,25 +78,33 @@ postman/
 
 ## ✅ Execução dos Testes Web (Cypress)
 
-![image alt](https://github.com/allanch0211/TesteGitHub/blob/51b4fce4313f77e5c31db110958734d17cf49feb/docs/images/cypress-run.png)
+<p align="center">
+  <img src="docs/images/cypress-run.png.png" width="900">
+</p>
 
 ---
 
 ## 📊 Relatório Allure
 
-![image alt](https://github.com/allanch0211/TesteGitHub/blob/51b4fce4313f77e5c31db110958734d17cf49feb/docs/images/allure-overview.png)
+<p align="center">
+  <img src="docs/images/allure-overview.png" width="900">
+</p>
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-![image alt](https://github.com/allanch0211/TesteGitHub/blob/51b4fce4313f77e5c31db110958734d17cf49feb/docs/images/project-structure.png)
+<p align="center">
+  <img src="docs/images/project-structure.png" width="900">
+</p>
 
 ---
 
 ## 🧪 Exemplo de Cenário BDD
 
-![image alt](https://github.com/allanch0211/TesteGitHub/blob/51b4fce4313f77e5c31db110958734d17cf49feb/docs/images/bdd-feature.png)
+<p align="center">
+  <img src="docs/images/bdd-feature.png" width="900">
+</p>
 
 ---
 
@@ -169,20 +177,25 @@ API pública de e-commerce utilizada para validar:
 
 ### Execução da Collection no Postman
 
-![image alt](docs/images/postman-collection-run.png.png)
+<p align="center">
+  <img src="docs/images/postman-collection-run.png" width="900">
+</p>
 
 ---
 
 ### Exemplo de Request com Testes Automatizados
 
-![image alt](docs/images/postman-test-example.png.png)
+<p align="center">
+  <img src="docs/images/postman-test-example.png" width="900">
+</p>
 
 ---
 
 ### Estrutura da Collection
 
-![image alt](docs/images/postman-collection-structure.png.png)
-
+<p align="center">
+  <img src="docs/images/postman-collection-structure.png" width="900">
+</p>
 ---
 
 
