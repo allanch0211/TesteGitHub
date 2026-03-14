@@ -19,15 +19,6 @@ PesquisaDoProduto(prod) {
         .contains('Carrinho')
 }
 
-
-
-   
-
-
-
-
-
-
     }
 
 

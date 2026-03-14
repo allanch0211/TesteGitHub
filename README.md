@@ -63,8 +63,6 @@ support/
 ┣ step_definitions/
 ┣ commands/
 
-fixtures/
-
 postman/
 ┣ collections/
 ┃ ┣ books-api-tests.json
@@ -82,6 +80,8 @@ postman/
   <img src="docs/images/cypress-run.png.png" width="900">
 </p>
 
+Execução da suíte de testes automatizados utilizando Cypress em modo headless, validando os fluxos implementados nas aplicações SauceDemo e Amazon.
+
 ---
 
 ## 📊 Relatório Allure
@@ -89,6 +89,8 @@ postman/
 <p align="center">
   <img src="docs/images/allure-overview.png" width="900">
 </p>
+
+Relatório gerado com Allure apresentando visão consolidada da execução dos testes, incluindo status dos cenários, tempo de execução e evidências da automação.
 
 ---
 
@@ -98,13 +100,85 @@ postman/
   <img src="docs/images/project-structure.png" width="900">
 </p>
 
+Organização do projeto seguindo boas práticas de automação, separando features, step definitions, pages e comandos reutilizáveis.
+
 ---
 
-## 🧪 Exemplo de Cenário BDD
+## 🧪 Cenários BDD
 
-<p align="center">
-  <img src="docs/images/bdd-feature.png" width="900">
-</p>
+<table>
+<tr>
+<td align="center">
+
+**SauceDemo**
+
+<img src="docs/images/bdd-sauceDemo.feature.png" width="450">
+
+</td>
+<td align="center">
+
+**Amazon**
+
+<img src="docs/images/bdd-amazon.feature.png" width="450">
+
+</td>
+</tr>
+</table>
+
+Cenários escritos em **Gherkin** utilizando Cucumber, representando regras de negócio e fluxos de usuário nas aplicações testadas.
+
+---
+
+## 🔧 Step Definitions
+
+<table>
+<tr>
+<td align="center">
+
+**SauceDemo**
+
+<img src="docs/images/cypress-step-sauceDemo.png" width="450">
+
+</td>
+<td align="center">
+
+**Amazon**
+
+<img src="docs/images/cypress-step-amazon.png" width="450">
+
+</td>
+</tr>
+</table>
+
+Implementação dos passos descritos nos cenários BDD, conectando os steps escritos em Gherkin com a lógica de automação desenvolvida em JavaScript.
+
+---
+
+## 🧩 Arquitetura de Automação
+
+<table>
+<tr>
+<td align="center">
+
+**Custom Command (SauceDemo)**
+
+<img src="docs/images/cypress-command-sauceDemo.png" width="450">
+
+</td>
+<td align="center">
+
+**Page Object Model (Amazon)**
+
+<img src="docs/images/cypress-page-amazon.png" width="450">
+
+</td>
+</tr>
+</table>
+
+Aplicação de diferentes estratégias de organização da automação:
+
+- **Custom Commands** utilizados no projeto SauceDemo para reutilização de comandos comuns e simplificação dos testes  
+- **Page Object Model** aplicado no projeto Amazon para centralização de seletores e interações da página
 
 ---
 
